@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VitaPlate - Health Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+    }
+    
+    .header {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    
+    .feature-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    }
+    
+    .feature-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🍽️ VitaPlate</h1>
+    <p>Your Personal AI Health & Wellness Assistant</p>
+  </div>
+
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🍽️</div>
+      <h3>Food Analysis</h3>
+      <p>Analyze food calories & nutrition</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">🎵</div>
+      <h3>Music Player</h3>
+      <p>Listen to your favorite songs</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">📔</div>
+      <h3>Personal Diary</h3>
+      <p>Password protected journal</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">🎤</div>
+      <h3>Voice Assistant</h3>
+      <p>Talk to your AI assistant</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">💪</div>
+      <h3>Exercises</h3>
+      <p>Watch exercise videos</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">💊</div>
+      <h3>Medicine Reminder</h3>
+      <p>Never miss your medication</p>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <h3>Health Analytics</h3>
+      <p>Track your health progress</p>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.feature-card').forEach(card => {
+      card.addEventListener('click', function() {
+        alert('Coming Soon! Feature: ' + this.querySelector('h3').textContent);
+      });
+    });
+  </script>
+</body>
+</html>
